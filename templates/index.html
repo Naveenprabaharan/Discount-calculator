@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployement</title>
+
+    <style>
+        body{
+            width: 70%;
+            margin: 0 auto;
+            background-image: url("img1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #head1{
+            color: brown;
+        }
+
+        #head2{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head2">Python LAB!</h1>
+    <h1 id="head1">Discount Finder</h1>
+
+    
+    
+    <form action="/" method="POST">
+        <label for="original_price">Original Price </label>
+        <input type="number" name="original_price" placeholder="Enter Original Price(Rs)："><br>
+        <label for="discount">Discount</label>
+        <input type="discount" name="discount" placeholder="Enter Discount(%)："><br>
+        <input type="submit" >
+    </form>
+
+    {% if my_sal %}
+    <h3>Your Original Price(Rs): {{org}} $</h3>    
+    <h3>Your Discount Price is: {{dis}} $</h3>
+        <h3>Your Discounted price is: {{my_sal}} $</h3> 
+    {% endif %}
+
+</body>
+</html>
